@@ -12,3 +12,11 @@ development:
   password: MpSja9AeU3xSkqjIkOho
   host: containers-us-west-176.railway.app
   port: 7619
+
+production:
+  <<: *default
+  database: railway
+  username: postgres
+  password: MpSja9AeU3xSkqjIkOho
+  host: containers-us-west-176.railway.app
+  port: 7619
