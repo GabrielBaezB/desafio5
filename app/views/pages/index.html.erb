@@ -1,0 +1,25 @@
+<div class="contain">
+  <h1>Personajes de Harry Potter!</h1>
+</div>
+
+ <table class="table container table-striped mt-5">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Nombre</th>
+      <th scope="col">Ubicacion</th>
+      <th scope="col">Casas</th>
+    </tr>
+  </thead>
+  <tbody>
+  <% @personajes.each do |character| %>
+    <tr>
+    
+      <th scope="row"><%= character.id %></th>
+      <td><%= character.name %></td>
+      <td><%= character.location %></td>
+      <td><%= character.house %></td>
+    </tr>
+    <% end%>
+  </tbody>
+</table>
